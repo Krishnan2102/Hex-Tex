@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #importing dependencies
 import os
 import bs4 
@@ -49,3 +50,14 @@ print(f"Split blog post into {len(all_splits)} sub-documents.")
 document_ids = vector_store.add_documents(documents=all_splits)
 print(document_ids[:3])
 print("Hello")
+=======
+import pymupdf
+
+doc=pymupdf.open("Project Description.pdf")
+out=open("output.txt","wb")
+for page in doc:
+    text=page.get_text().encode("utf8")
+    out.write(text)
+    out.write(bytes((12,)))
+out.close()
+>>>>>>> 1915d119a14f51198ac39d122445e85282ec5776
