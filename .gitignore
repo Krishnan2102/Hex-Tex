@@ -1,1 +1,5 @@
+#API key ignore
 ./api.txt
+
+#venv ignore
+./venv
