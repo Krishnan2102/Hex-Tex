@@ -1,0 +1,8 @@
+# requirements.txt 
+
+chromadb
+sentence-transformers
+pymupdf
+langchain
+langchain-google-genai
+python-dotenv
