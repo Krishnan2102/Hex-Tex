@@ -1,8 +1,40 @@
 # requirements.txt 
 
-chromadb
-sentence-transformers
-pymupdf
-langchain
-langchain-google-genai
-python-dotenv
+# --- Core AI Engine & Logic (Partner A) ---
+# For stateful reasoning and retrieval loops
+langgraph [cite: 25]
+# For PDF parsing and text chunking
+pymudupdf 
+# For vector storage and semantic retrieval
+chromadb [cite: 8, 26]
+# OpenAI's Whisper for audio/voice processing
+openai-whisper [cite: 28, 51]
+# For RAG evaluation and benchmarking
+ragas [cite: 36]
+
+# --- Models & API Integration ---
+# Official library for Llama 3.2 and Vision models
+ollama 
+# Alternative for Groq cloud access
+groq [cite: 65]
+# Google AI Studio access
+google-generativeai [cite: 65]
+
+# --- Systems & Interface (Partner B) ---
+# Backend framework
+fastapi [cite: 8, 28]
+# Web server for FastAPI
+uvicorn
+# Frontend dashboard
+streamlit [cite: 8, 28]
+# For containerization
+# (Note: Docker itself isn't a pip package, but these help with Python integration)
+python-dotenv 
+
+# --- Utilities & Data Handling ---
+# Essential for JSON and data manipulation
+pandas
+# For audio file processing (required by Whisper)
+pydub
+# Image processing for Llama Vision
+Pillow
